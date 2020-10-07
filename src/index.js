@@ -4,13 +4,10 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter,Route,Switch} from 'react-router-dom';
-import Home from './component/home';
-import Sign from './component/sign';
 import {Grommet, grommet} from 'grommet';
-import { deepMerge } from 'grommet/utils';
-import Welcome from './component/welcome';
+import {Menu} from 'grommet-icons';
+
 const theme={
-   
    
   formField:{
     border: undefined,
@@ -27,9 +24,7 @@ ReactDOM.render(
         
         <Switch>
           <Route path="/" exact component={App} />  
-          <Route path="/home" component={Home}></Route>
-          <Route path="/sign" component={Sign} />
-          <Route path="/welcome" component={Welcome} />
+          
         </Switch>
       </BrowserRouter>
     </Grommet>
