@@ -1,6 +1,6 @@
-import React,{useState} from 'react';
-import {Link,Redirect} from 'react-router-dom';
-import {Anchor,Box, Grommet,Button,Text,Accordion,AccordionPanel,DropButton} from 'grommet';
+import React from 'react';
+
+import {Anchor,Box,Button,Text,Accordion,AccordionPanel,DropButton} from 'grommet';
 import '../App.css';
 import {Mail,Phone,Clock,Menu,Skype,Facebook,Google,Twitter} from 'grommet-icons';
 
@@ -69,13 +69,13 @@ function Appheader() {
             </Box>}><Text  color="black" weight="bold" >Blog</Text></DropButton>
             <Anchor><Text  color="black" weight="bold" >Contact</Text></Anchor>
 
-                <Button label={<Text color="white" weight="bold">Get Estimate</Text>} color="blue" primary />
+                <Button label={<Text color="white" ><span>Get Estimate</span></Text>} color="blue" primary />
             </Box>
             </div>
             <div className="headmenu">
-                <DropButton dropProps={{align:{top:'bottom',right:'right'}}} margin={{right:"8vh"}}  dropContent={<Box width="xxlarge" background="light-4" direction="column" gap="medium" pad={{left:"8%"}}>
-                <Accordion multiple>
-                    <AccordionPanel label="Home" >
+                <DropButton dropProps={{align:{top:'bottom',right:'right'}}} margin={{right:"8vh"}}  dropContent={<Box width="xxlarge" background="light-4" direction="column" gap="medium"  pad={{left:"8%"}}>
+                <Accordion  multiple>
+                    <AccordionPanel  label="Home" >
                         <Box background="light-4" >
                             some
                         </Box>

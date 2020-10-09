@@ -1,20 +1,15 @@
 import React,{useState} from 'react';
-import {Link,Redirect} from 'react-router-dom';
-import {Box, Grommet,Button,Heading,Text} from 'grommet';
+
+import {Box,Button,Heading,Text} from 'grommet';
 import './App.css';
 import Appheader from './component/Appheader';
 import Machinetools from './component/Machinetools';
+import Ai from './component/Ai';
+import Review from './component/review';
+import Seclow from './othercomponent/secondLow/secondlow';
+import Foot from './othercomponent/src/Footer/footer';
+import Our from './othercomponent/src/Achv';
 function App() {
-  const [login,setLogin]=useState(false);
-  const [sign,setSign]=useState(false);
-  if(login){
-    return <Redirect to="/home" push={true} />
-  
-  }
-  else if(sign){
-    return <Redirect to="/sign" push={true} />
-  }
-  else{
     return (
     
       
@@ -26,7 +21,7 @@ function App() {
             <Heading margin="none" level="2" color="black">Build an application  powered by</Heading><Heading margin="none" level="2" color="blue"> Machine Learning</Heading>
             <Text color="dark-1" margin={{"top":"2%"}}>We develop effective plans to move your customers behaviour. customer can be alwayes his profit.</Text>
             <Box width={{max:"30%",min:"50%"}}>
-              <Button size="small" margin={{"top":"3%"}} label={<Text color="white" weight="bold">Get In Touch</Text>} color="blue" primary />
+            <Button  size="small" hoverIndicator="dark-1"  margin={{"top":"3%"}} fill={false} ><Box background="blue" pad="small" justify='center' align="center" > <Text color="white"  weight="bold">Get In Touch</Text></Box></Button>
             </Box>
 
           </Box>
@@ -47,7 +42,7 @@ function App() {
             <Heading margin="none" level="3" color="black">About our Machine Learning </Heading><Heading margin="none" level="3" color="blue"> software firm.</Heading>
             <Text color="dark-1" margin={{"top":"2%"}}>Replacing a maintains the amount of lines. When replacing a selection. help agencies to define their new business objectives and then create. maintains the amount of lines. When replacing a selection. help agencies to define their new business objectives and then create</Text>
             <Box width={{max:"30%",min:"50%"}}>
-              <Button size="small" color="#1AA15F" margin={{"top":"3%"}} label={<Text color="white" weight="bold">Learn More</Text>}  primary />
+            <Button  size="small" hoverIndicator="dark-1"  margin={{"top":"3%"}} fill={false} ><Box background="blue" pad="small" justify='center' align="center" > <Text color="white"  weight="bold">Learn More</Text></Box></Button>
             </Box>
 
           </Box>
@@ -55,6 +50,31 @@ function App() {
           
           
         </Box>
+        <div className="cols">
+          <Machinetools />
+        </div>
+        <div className="ai">
+          <Ai />
+
+        </div>
+        <div className="our">
+
+          <Our />
+        </div>
+
+
+        
+        <div className="ai">
+          <Review />
+        </div>
+        <div className="ai">
+          <Seclow />
+        </div>
+        <div className="ai">
+          <Foot />
+        </div>
+
+
 
 
         
@@ -63,7 +83,7 @@ function App() {
 
   
     );
-  }
+  
   
 }
 
