@@ -9,13 +9,15 @@ html,body{
   padding-left: 5%;
   padding-top: 10px;
 }
+
 .ai{
   height: 700px;
   
 
 }
 .our{
-  height: 900px;
+  height: 1000px;
+  min-height: auto;
 
   margin-top: 4%;
   margin-bottom: 4%;
