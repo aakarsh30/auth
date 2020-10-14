@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
-
+import Ab from './photo/ab.png';
+import S1 from './photo/s1.png';
 import {Box,Button,Heading,Text} from 'grommet';
 import './App.css';
 import Appheader from './component/Appheader';
@@ -27,14 +28,14 @@ function App() {
           </Box>
           <div className="image">
           <Box >
-            <img style={{width:"600px",height:"300px",minWidth:"200px",minHeight:"150px"}} src="/s1.png" ></img>
+            <img style={{width:"600px",height:"300px",minWidth:"200px",minHeight:"150px"}} src={S1} ></img>
           </Box>
           </div>
         </Box>
         <Box animation={{type:"slideRight",duration:4000}}  direction="row-responsive" height={{max:"700px",min:"auto"}} align="center" justify="between" width="xxlarge" margin={{"top":"5%"}} >
           <div className="dimg">
         <Box  >
-            <img style={{width:"400px",height:"300px"}}  src="/ab.png" ></img>
+            <img style={{width:"400px",height:"300px"}}  src={Ab} ></img>
           </Box>
           </div>
           <div className="detail">

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Lopard from '../photo/lopard.jpg';
 import {Anchor,Box,Button,Text,Accordion,AccordionPanel,DropButton} from 'grommet';
 import '../App.css';
 import {Mail,Phone,Clock,Menu,Skype,Facebook,Google,Twitter} from 'grommet-icons';
@@ -34,7 +34,7 @@ function Appheader() {
         </div>
         <Box animation={{type:"fadeIn",duration:4000}} height={{max:"160px",min:"auto"}} className="head" direction="row" align="center" justify="between" background="light-1"  margin={{top:"17px"}}>
             <Box margin={{left:"8%"}}>
-            <Anchor> <img src="/lopard.jpg" ></img></Anchor> 
+            <Anchor> <img src={Lopard} ></img></Anchor> 
             </Box>
             <div className="headlink">
             <Box direction="row" margin={{"right":"4%"}} align="center" gap="medium">
