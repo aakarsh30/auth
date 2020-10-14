@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom';
 import './foot.css';
 import {Facebook,Google,Twitter,Instagram,Skype} from 'grommet-icons';
 import {Box} from 'grommet';
-
+import L6 from '../../Lopard/6.png';
 function Footer(){
   return(
     <>
       <div className="three">
-      <img src="/Lopard/6.png"/>
+      <img src={L6}/>
         <br /><br />
         <span className="tfd">Are you looking for new professional advice for your business. Are you looking for professional advice for your new business. Are you looking for professional advice for your new business.
         </span>

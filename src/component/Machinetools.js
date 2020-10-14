@@ -12,7 +12,7 @@ function Machinetools(props) {
 
     return (
         <>
-        <Box animation={{type:"slideRight",duration:4000}} direction="column"  width="100%" className="cols"  pad="large" background="light-4" justify="center"  >
+        <Box  direction="column"  width="100%" className="cols"  pad="large" background="light-4" justify="center"  >
             <Box direction="row-responsive" justify="center"  >
                 <Box background="white" border={{color:"white",size:"1px"}} pad={{top:"36px",bottom:"36px",left:"30px",right:"30px"}} width={{min:"313px",max:"313px"}} height={{min:"313px",max:"313px"}} >
                 <Heading margin="none" level="4" color="black">Digital agency</Heading><Heading margin="none" level="4" color="blue"> Service & Solutions</Heading>
