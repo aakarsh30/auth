@@ -20,13 +20,8 @@ const theme={
 ReactDOM.render(
   <React.StrictMode>
     <Grommet full theme={theme}>
-      <BrowserRouter>
-        
-        <Switch>
-          <Route path="/"  component={App} />  
-          
-        </Switch>
-      </BrowserRouter>
+      
+      <App />
     </Grommet>
   </React.StrictMode>,
   document.getElementById('root')
