@@ -10,7 +10,7 @@ function Appheader() {
     return (
         <>
         <div className="top">
-        <Box  direction="row" align="center" justify="between">
+        <Box animation={{type:"fadeIn",duration:4000}} direction="row" align="center" justify="between">
             <Box direction="row" align="center" className="topcmp" >
                <Anchor><Mail color="blue" size="medium" />
                 <Text margin={{"left":"4px","right":"10px"}} size="small">aakarshsaxenasup@gmail.com</Text></Anchor> 
@@ -32,7 +32,7 @@ function Appheader() {
         </Box>
             
         </div>
-        <Box height={{max:"160px",min:"auto"}} className="head" direction="row" align="center" justify="between" background="light-1"  margin={{top:"17px"}}>
+        <Box animation={{type:"fadeIn",duration:4000}} height={{max:"160px",min:"auto"}} className="head" direction="row" align="center" justify="between" background="light-1"  margin={{top:"17px"}}>
             <Box margin={{left:"8%"}}>
             <Anchor> <img src="/lopard.jpg" ></img></Anchor> 
             </Box>
@@ -73,28 +73,36 @@ function Appheader() {
             </Box>
             </div>
             <div className="headmenu">
-                <DropButton dropProps={{align:{top:'bottom',right:'right'}}} margin={{right:"8vh"}}  dropContent={<Box width="xxlarge" background="light-4" direction="column" gap="medium"  pad={{left:"8%"}}>
+                <DropButton dropProps={{align:{top:'bottom',right:'right'}}} margin={{right:"8vh"}}  dropContent={<Box width="xxlarge" background="light-4" direction="column" gap="large"   pad={{left:"8%",top:"5%"}}>
                 <Accordion  multiple>
                     <AccordionPanel  label="Home" >
                         <Box background="light-4" >
                             some
                         </Box>
                     </AccordionPanel>
+                </Accordion>
+                <Accordion  multiple>
                     <AccordionPanel label="Pages" >
                         <Box background="light-4" >
                             some
                         </Box>
                     </AccordionPanel>
+                </Accordion>
+                <Accordion  multiple>
                     <AccordionPanel label="Services" >
                         <Box background="light-4" >
                             some
                         </Box>
                     </AccordionPanel>
+                </Accordion>
+                <Accordion  multiple>
                     <AccordionPanel label="Works" >
                         <Box background="light-4" >
                             some
                         </Box>
                     </AccordionPanel>
+                </Accordion>
+                <Accordion  multiple>                    
                     <AccordionPanel label="Blog" >
                         <Box background="light-4" >
                             some

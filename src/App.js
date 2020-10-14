@@ -16,7 +16,7 @@ function App() {
       <Box fill={true} overflow={{horizontal:"hidden",vertical:"auto"}}    background={{color:"light-1"}}  >
         <Appheader />
         
-        <Box height={{max:"700px",min:"auto"}} className="fst" direction="row" align="center" justify="between" width="xxlarge" margin={{"top":"5%"}} >
+        <Box animation={{type:"slideLeft",duration:4000}} height={{max:"700px",min:"auto"}} className="fst" direction="row" align="center" justify="between" width="xxlarge" margin={{"top":"5%"}} >
           <Box pad="large">
             <Heading margin="none" level="2" color="black">Build an application  powered by</Heading><Heading margin="none" level="2" color="blue"> Machine Learning</Heading>
             <Text color="dark-1" margin={{"top":"2%"}}>We develop effective plans to move your customers behaviour. customer can be alwayes his profit.</Text>
@@ -31,7 +31,7 @@ function App() {
           </Box>
           </div>
         </Box>
-        <Box  direction="row-responsive" height={{max:"700px",min:"auto"}} align="center" justify="between" width="xxlarge" margin={{"top":"5%"}} >
+        <Box animation={{type:"slideRight",duration:4000}}  direction="row-responsive" height={{max:"700px",min:"auto"}} align="center" justify="between" width="xxlarge" margin={{"top":"5%"}} >
           <div className="dimg">
         <Box  >
             <img style={{width:"400px",height:"300px"}}  src="/ab.png" ></img>
